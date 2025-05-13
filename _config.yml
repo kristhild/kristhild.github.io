@@ -1,5 +1,5 @@
-title:
+title: Aviation Accident Analysis
 #logo
-description: Aviation Accident Analysis
+description: Data from NTSB
 #show_download: true
-remote_theme: agency-jekyll-theme
+theme: jekyll-theme-dinky
