@@ -18,22 +18,19 @@ title: home
     the small plane crash in Brooklyn Park, Minnesota occurred in which a plane with one person crashed straight into a suburban house. Thankfully, no one in the home 
     was hurt but there were no surviviors in the plane. Upon impact, the plane quickly set ablaze. Some of these crashes can't help but make you think,
     what on Earth caused such an event? Are these plane crashes becoming more and more common?</p>
-
     <p>
       These are the type of questions that led me to exploring real data and reports about aviation accidents. There will be visualizations analyzing short-term information 
       (last five years) and some longer-term visualizations starting from 1982.
     </p>
 
+    
     <h2>The Data</h2>
     All of the data used comes from the National Transportation Safety Board's Case Analysis and Reports.
     I only used data from 1982 - 2024, but similar data ia available back to 1962. NTSB organizes a wide variety of aviation events and crafts, including lower-level incidents, 
     helicopters, and unmanned drones. However, to focus the scope of this investigation, all of my data derives from events including one or more airplanes that were classified as "accidents"
     (more serious events in which the plane was damaged or lives were threatened/harmed).
+
     
-    <h2>Timelines</h2>
-     <img src="docs/assets/aviationLine.png" alt="Main Timeline">
-
-
     <h2>Tidying the Data</h2>
     <p>
     The greatest time spent on this project was on data tidying. I used R for my main application and downloaded Microsoft Access files from 
@@ -42,7 +39,7 @@ title: home
     (I used "avall" and "PRE2008"). 
       </p>
     <p>
-    To create specific graphs, I was often using pivot_wider() and group_by().
+    To create specific graphs, I was often using pivot_wider() and group_by(). I also created individual functionsfor this data that helped limit to the information I was seeking.
       </p>
     <p>
     I also spent an unfortunate amount of time on working with data covering fatalities and injuries in these plane accidents. Upon further investigation, there was only data from 2020-2023 in 
@@ -50,6 +47,18 @@ title: home
     visualizations and analyses for fatality statistics. Something similar occurred in the "Findings" datasets. However, I decided to still use the data, just limited to 2020-2025.
       </p>
     
+    
+    <h2>Timelines</h2>
+     <img src="docs/assets/aviationLine.png" alt="Main Timeline">
+    <p>
+      As you can see, the amount of plane accidents have severely decreased in the last 43 years. One notable dip in accidents was in 2020, when many flights - especially international flights -
+      were temporarily banned and people were required to social distance. One piece of data I would love to further this graph would be on the overall number of flights every year. I am not sure how and
+      where one could obtain information on every private flight and commerical flight taken place in the United States. However, I think that could add a lot to this visualization as it seems there is
+      greater demand for flights and it seems more people are flying. If that would be the case, then percentages of how many accidents occur against how many flights occur could be calculuated. Then, people
+      could understand the ratio of actual accidents which I would predict is lower than it feels when we watch the news about all these plane crashes.
+    </p>
+
+
     <h2>Looking at Causes and Reasonings</h2>
   <img src="docs/assets/aviationPie.png" alt="Pie Chart">
 
