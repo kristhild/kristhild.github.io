@@ -31,23 +31,6 @@ title: home
     (more serious events in which the plane was damaged or lives were threatened/harmed).
 
     
-    <h2>Tidying the Data</h2>
-    <p>
-    The greatest time spent on this project was on data tidying. I used R for my main application and downloaded Microsoft Access files from 
-    <a href = "https://data.ntsb.gov/avdata">NTSB downloadable datasets</a>. I used SQL queries to grab the data tables I thought were most important.
-    I spent most of my time removing unwanted coloumns and filtering for specific cases. I also had to combine datasets to create a full timeline as time was separated across different files
-    (I used "avall" and "PRE2008"). 
-      </p>
-    <p>
-    To create specific graphs, I was often using pivot_wider() and group_by(). I also created individual functionsfor this data that helped limit to the information I was seeking.
-      </p>
-    <p>
-    I also spent an unfortunate amount of time on working with data covering fatalities and injuries in these plane accidents. Upon further investigation, there was only data from 2020-2023 in 
-    the 1982-2008 files and only 2021-2025 data in the 2008-2025 files. To this day, I still do not understand the cause of this disorganization and confusion. Thus, I could not create
-    visualizations and analyses for fatality statistics. Something similar occurred in the "Findings" datasets. However, I decided to still use the data, just limited to 2020-2025.
-      </p>
-    
-    
     <h2>Time</h2>
      <img src="docs/assets/aviationLine.png" alt="Main Timeline">
     <p>
@@ -64,6 +47,8 @@ title: home
   <img src="docs/assets/aviationPie.png" alt="Pie Chart" style="max-width: 70%; height: auto;">
 
   <img src="docs/assets/aviationColumn.png" alt="Column Chart", style="max-width: 100%; height: auto;">
+
+     <img src="docs/assets/avMonthDay.png" alt="Year Line Report">
 
 
     <h2>Maps</h2>
